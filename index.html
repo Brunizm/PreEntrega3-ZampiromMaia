@@ -12,20 +12,25 @@
     <div>
         <label for="continent">Enter your continent:</label>
         <input type="text" id="continent" placeholder="e.g., North America">
-        <button onclick="checkContinent()">Next</button>
+        <button id="nextButton">Next</button>
     </div>
 
     <div id="cityDiv" style="display:none;">
         <label for="city">Enter your city:</label>
         <input type="text" id="city" placeholder="e.g., New York">
-        <button onclick="findCafes()">Search</button>
+        <button id="searchButton">Search</button>
+    </div>
+
+    <div id="quantityDiv" style="display:none;">
+        <label for="quantity">Enter quantity of coffees:</label>
+        <input type="number" id="quantity" min="1" placeholder="e.g., 2">
+        <button id="calculateButton">Calculate Total</button>
     </div>
 
     <div id="results"></div>
 
-    <!-- New footer added -->
     <footer style="margin-top: 20px; text-align: center;">
-        <p>&copy; 2024 Coffee Purchase Simulator. All rights reserved.</p>
+        <p>Coffee Purchase Simulator.</p>
     </footer>
 
     <script src="./js/index.js"></script>
